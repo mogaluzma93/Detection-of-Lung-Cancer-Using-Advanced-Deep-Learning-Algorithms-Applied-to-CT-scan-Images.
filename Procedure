@@ -1,0 +1,34 @@
+Perform data augmentation to improve model generalization.
+Step 5: Split the Dataset into Train, Validation, and Test Sets
+Partition the dataset into training (80%), validation (10%), and testing (10%) splits.
+Cache and prefetch datasets to optimize loading performance.
+Step 6: Build the CNN Model
+Define a sequential CNN model with multiple convolutional and pooling layers.
+Use Conv2D, MaxPooling2D, Flatten, and Dense layers.
+Set ReLU activation for hidden layers and Softmax for the output layer.
+Step 7: Compile the CNN Model
+Choose Adam optimizer and SparseCategoricalCrossentropy as the loss function.
+Define accuracy as the evaluation metric.
+Step 8: Train the CNN Model
+Train the model on the training dataset for 40 epochs.
+Validate the model using the validation dataset.
+Step 9: Evaluate CNN Model Performance
+Test the model on unseen data (test set).
+Compute the final accuracy of the trained model.
+Step 10: Plot CNN Accuracy and Loss Curves
+Plot training accuracy vs. epochs.
+Plot training loss vs. epochs.
+Step 11: Perform Image Prediction Using CNN
+Load a test image and preprocess it.
+Use the trained CNN model to predict the class of the image.
+Step 12: Build the ResNet50 Model
+Load a pre-trained ResNet50 model with imagenet weights.
+Add custom dense layers for classification.
+Freeze the ResNet50 base model for transfer learning.
+Step 13: Compile and Train the ResNet50 Model
+Use Adam optimizer and categorical cross-entropy loss.
+Train the model using early stopping to prevent overfitting.
+Step 14: Evaluate ResNet50 Model Performance
+Evaluate the model on the test dataset.
+Compute test accuracy and loss.
+ 
